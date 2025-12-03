@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Waste Management System</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Smart Waste Management</title>
+    <link rel="icon" type="image/png" href="../static/images/logo.png">
+    <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 
@@ -13,7 +14,7 @@
     <nav>
         <div class="nav-bar">
             <div class="logo">
-                <h2>Waste management</h2>
+                <h2><i class="fa-solid fa-recycle"></i>Smart Garbage System</h2>
             </div>
             <div class="nav-signin">
                <button class="button" onclick="window.location.href='login.html'">Login</button>
@@ -25,7 +26,7 @@
         <div class="login-form">
             <form action="">
                 <h1>Welcome back</h1>
-                <p>Login in to Waste Mangament</p>
+                <p>Admin Login in to Waste Mangament</p>
                 <form action="" class="login-form">
                     <div class="form-group">
                         <span class="input-icon"><i class="fa-solid fa-user"></i></span>
@@ -35,7 +36,7 @@
                         <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
                         <input type="password" placeholder="Password"  required >
                     </div>
-                    <button type="submit" class="login-button">Login</button>
+                    <button type="submit" class="login-button" onclick="window.location.href='admin-dashboard.html'">Login</button>
 
                 </form>
                 <p>Don't have an account?<a href="signup.html" #> Sign Up</a></p>
