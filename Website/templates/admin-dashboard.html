@@ -14,23 +14,18 @@
 </head>
 
 <body class="dashboard">
-    <!-- Dashboard Header -->
     <div class="dashboard-header">
         <div class="dashboard-header-content">
-            <h1><i class="fa-solid fa-recycle"></i></i> Smart Garbage System – Admin Dashboard</h1>
+            <h1><i class="fa-solid fa-recycle"></i> Smart Garbage System – Admin Dashboard</h1>
             <div class="user-info">
                 <span><i class="fas fa-user-circle"></i> Admin</span>
-                <a href="login.html" class="btn btn-logout">
+                <a href="{{ url_for('auth.login') }}" class="btn btn-logout">
                     <i class="fas fa-sign-out-alt"></i> Logout
                 </a>
             </div>
         </div>
     </div>
-
-    <!-- Dashboard Content -->
     <div class="dashboard-content">
-
-        <!-- Statistics Cards -->
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon blue">
@@ -76,23 +71,16 @@
                 </div>
             </div>
         </div>
-
-        <!-- Collectors Section -->
         <div class="section-header">
             <h2><i class="fas fa-user-tie"></i> Collectors by Area</h2>
         </div>
-
-        <!-- Area Tabs -->
         <div class="area-tabs">
             <button class="area-tab active" data-area="all">All Areas</button>
             <button class="area-tab" data-area="shrinagar">Shri nagar</button>
             <button class="area-tab" data-area="bhagyanagar">Bhagya nagar</button>
             <button class="area-tab" data-area="shivajinagar">Shivaji nagar</button>
         </div>
-
-        <!-- Collectors Grid -->
         <div class="collectors-grid">
-            <!-- North Zone Collectors -->
             <div class="collector-card" data-area="shrinagar">
                 <div class="collector-header">
                     <div class="collector-avatar">R</div>
@@ -191,8 +179,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Central Zone Collectors -->
             <div class="collector-card" data-area="bhagyanagar">
                 <div class="collector-header">
                     <div class="collector-avatar">S</div>
@@ -291,8 +277,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- South Zone Collectors -->
             <div class="collector-card" data-area="shivajinagar">
                 <div class="collector-header">
                     <div class="collector-avatar">K</div>
@@ -392,14 +376,10 @@
                 </div>
             </div>
         </div>
-
-        <!-- Garbage Reports Table -->
         <div class="table-container mt-4">
             <div class="section-header">
                 <h2><i class="fas fa-trash-alt"></i> Garbage Reports</h2>
             </div>
-
-            <!-- Table Tabs -->
             <div class="table-tabs">
                 <button class="table-tab active" data-status="all">All</button>
                 <button class="table-tab" data-status="pending">Pending</button>
@@ -426,7 +406,6 @@
                 </tbody>
             </table>
         </div>
-        <!-- Users Table -->
         <div class="table-container mt-4">
             <div class="section-header">
                 <h2><i class="fas fa-users"></i> Registered Users</h2>
